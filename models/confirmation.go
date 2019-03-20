@@ -105,7 +105,7 @@ func NewConfirmationWithContext(theType Type, templateName TemplateName, creator
 	}
 }
 
-//Add context data
+//AddContext adds context data
 func (c *Confirmation) AddContext(data interface{}) {
 
 	jsonData, _ := json.Marshal(data)
@@ -113,7 +113,7 @@ func (c *Confirmation) AddContext(data interface{}) {
 	return
 }
 
-//Decode the context data into the provided type
+//DecodeContext decodes the context data into the provided type
 func (c *Confirmation) DecodeContext(data interface{}) error {
 
 	if c.Context != nil {

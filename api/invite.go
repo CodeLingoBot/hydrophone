@@ -108,7 +108,7 @@ func (a *Api) GetReceivedInvitations(res http.ResponseWriter, req *http.Request,
 	return
 }
 
-//Get the still-pending invitations for a group you own or are an admin of.
+//GetSentInvitations gets the still-pending invitations for a group you own or are an admin of.
 //These are the invitations you have sent that have not been accepted.
 //There is no way to tell if an invitation has been ignored.
 //
